@@ -7,8 +7,10 @@
       <class name="com.qa.tests.LoginTest">
         <methods>
           <include name="successFullLogin"/>
+          <include name="tearDown"/>
           <include name="invokeWebriver"/>
           <include name="beforeMethod"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- com.qa.tests.LoginTest -->
     </classes>

@@ -1,0 +1,25 @@
+{
+	"invalidPassword": {
+		"username": "bdia@yopmail.com",
+		"password": "Bambooo"
+	},
+	"invalidUserName": {
+		"username": "bdia.sne@yopmail.com",
+		"password": "xcswvcwx"
+	},
+	"sucessfulLogin": {
+		"username": "bdia@yopmail.com",
+		"password": "Bambooo"
+	},
+	"succesFullGoogleLogin": {
+		"userEmail": "bdia@agiltoo.fr"
+	},
+	"invalidGoogleEmailLogin": {
+		"userEmail": "bdia@yopmail.com"
+	},
+	
+	"freeCrmValidCredentials" : {
+	"useremail" : "bdia.sne@gmail.com",
+	"userpassword" : "Bamboo77"
+	}
+}

@@ -1,7 +1,11 @@
 package com.qa.tests;
 
+import java.io.InputStream;
 import java.lang.reflect.Method;
 
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -16,6 +20,32 @@ public class LoginTest extends Base {
 	HomePage homePage;
 	LoginPage loginPage;
 	BackOfficePage backOfficePage;
+	JSONObject loginUsers;
+
+	@BeforeClass
+	public void beforeClass() throws Exception {
+		InputStream stream = null;
+
+		String loginDataPath = "Data/loginUsers.json";
+
+		try {
+
+			stream = getClass().getClassLoader().getResourceAsStream(loginDataPath);
+
+			JSONTokener tokener = new JSONTokener(stream);
+			loginUsers = new JSONObject(tokener);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+
+		} finally {
+
+			if (stream != null)
+				stream.close();
+
+		}
+	}
 
 	@BeforeMethod
 	public void beforeMethod(Method m) throws InterruptedException {
@@ -38,16 +68,17 @@ public class LoginTest extends Base {
 		String expectedLoginURL = "https://ui.freecrm.com/";
 
 		soft.assertEquals(actualLoginURL, expectedLoginURL);
+		String email = loginUsers.getJSONObject("freeCrmValidCredentials").getString("useremail");
+		String password = loginUsers.getJSONObject("freeCrmValidCredentials").getString("userpassword");
 
-		loginPage.enterEmail("bdia.sne@gmail.com", "Entering email : bdia.sne@gmail.com");
-		loginPage.enterPassword("Bamboo87", "Sending password : Bamboo87");
+		loginPage.enterEmail(email, "Entering email : " + " "  + email);
+		loginPage.enterPassword(password, "Sending password :"  + " " + password);
 		backOfficePage = loginPage.pressLoginButton("Login Button pressed");
-		
+
 		String actualbackOfficeURL = backOfficePage.getBackOfficePageUrl();
-		
-		
-		soft.assertEquals(actualbackOfficeURL, "https://ui.freecrm.com/");
-		
+
+		soft.assertEquals(actualbackOfficeURL, expectedLoginURL );
+
 		soft.assertAll();
 
 	}

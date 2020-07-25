@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-23T21:08:08 CEST" name="Suite" finished-at="2020-07-23T21:08:28 CEST" duration-ms="20075">
+  <suite started-at="2020-07-25T19:22:27 CEST" name="Suite" finished-at="2020-07-25T19:22:43 CEST" duration-ms="16245">
     <groups>
     </groups>
-    <test started-at="2020-07-23T21:08:08 CEST" name="regression" finished-at="2020-07-23T21:08:28 CEST" duration-ms="20075">
+    <test started-at="2020-07-25T19:22:27 CEST" name="regression" finished-at="2020-07-25T19:22:43 CEST" duration-ms="16245">
       <class name="com.qa.tests.LoginTest">
-        <test-method is-config="true" signature="invokeWebriver()[pri:0, instance:com.qa.tests.LoginTest@7995092a]" started-at="2020-07-23T21:08:08 CEST" name="invokeWebriver" finished-at="2020-07-23T21:08:15 CEST" duration-ms="6952" status="PASS">
+        <test-method is-config="true" signature="invokeWebriver()[pri:0, instance:com.qa.tests.LoginTest@23986957]" started-at="2020-07-25T19:22:27 CEST" name="invokeWebriver" finished-at="2020-07-25T19:22:32 CEST" duration-ms="4623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeWebriver -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTest@7995092a]" started-at="2020-07-23T21:08:15 CEST" name="beforeMethod" finished-at="2020-07-23T21:08:26 CEST" duration-ms="10804" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTest@23986957]" started-at="2020-07-25T19:22:32 CEST" name="beforeClass" finished-at="2020-07-25T19:22:32 CEST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTest@23986957]" started-at="2020-07-25T19:22:32 CEST" name="beforeMethod" finished-at="2020-07-25T19:22:42 CEST" duration-ms="10318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="successFullLogin()[pri:0, instance:com.qa.tests.LoginTest@7995092a]" started-at="2020-07-23T21:08:26 CEST" name="successFullLogin" finished-at="2020-07-23T21:08:27 CEST" duration-ms="1561" status="PASS">
+        <test-method signature="successFullLogin()[pri:0, instance:com.qa.tests.LoginTest@23986957]" started-at="2020-07-25T19:22:42 CEST" name="successFullLogin" finished-at="2020-07-25T19:22:43 CEST" duration-ms="927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successFullLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@7995092a]" started-at="2020-07-23T21:08:27 CEST" name="tearDown" finished-at="2020-07-23T21:08:28 CEST" duration-ms="661" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@23986957]" started-at="2020-07-25T19:22:43 CEST" name="tearDown" finished-at="2020-07-25T19:22:43 CEST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
