@@ -4,11 +4,15 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -20,6 +24,13 @@ public class Base {
 	public static WebDriver driver;
 	static Properties prop;
 	TestUtils utils = new TestUtils();
+	
+	public static final String USERNAME = "bdia";
+	  public static final String ACCESS_KEY = "8a41c01f-c384-450c-95d5-f82863e2d509";
+	  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
+	  
+	  //https://bdia:8a41c01f-c384-450c-95d5-f82863e2d509@ondemand.eu-central-1.saucelabs.com:443/wd/hub
+	  
 
 	/*
 	 * Initialze object Page Factory
@@ -47,14 +58,38 @@ public class Base {
 			// mvn test -Dbrowser=chrome
 
 			// String browserName = System.getProperty("browser");
+			
 
 			if (browserName.equalsIgnoreCase("chrome")) {
+				/*
 				String path = System.getProperty("user.dir") + "/src/main//resources/chromedriver";
 				System.out.println(path);
 				System.setProperty("webdriver.chrome.driver", path);
 				driver = new ChromeDriver();
+				 */
+				/*MutableCapabilities sauceOptions = new MutableCapabilities();
 
-			} else if (browserName.equalsIgnoreCase("firefox")) {
+				ChromeOptions browserOptions = new ChromeOptions();
+				browserOptions.setExperimentalOption("w3c", true);
+				browserOptions.setCapability("platformName", "Windows 10");
+				browserOptions.setCapability("browserVersion", "71.0");
+				browserOptions.setCapability("sauce:options", sauceOptions);
+				*/
+				/*DesiredCapabilities caps = DesiredCapabilities.chrome();
+			    caps.setCapability("platform", "Windows XP");
+			    caps.setCapability("version", "81");
+			    */
+			    MutableCapabilities sauceOptions = new MutableCapabilities();
+
+			    ChromeOptions browserOptions = new ChromeOptions();
+			    browserOptions.setExperimentalOption("w3c", true);
+			    browserOptions.setCapability("platformName", "macOS 10.15");
+			    browserOptions.setCapability("browserVersion", "72.0");
+			    browserOptions.setCapability("sauce:options", sauceOptions);
+				
+				driver = new RemoteWebDriver(new java.net.URL(URL), browserOptions);
+				
+			} /*else if (browserName.equalsIgnoreCase("firefox")) {
 
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "/src/main/resources/geckodriver");
@@ -65,7 +100,7 @@ public class Base {
 						System.getProperty("user.dir") + "/src/main/resources/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 
-			}
+			}*/
 
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -122,13 +157,6 @@ public class Base {
 	
 	
 	
-	/*
-	 * Close the driver
-	 */
-	
-	@AfterClass
-	public void tearDown() {
-		driver.close();
-	}
+
 
 }

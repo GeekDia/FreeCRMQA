@@ -13,4 +13,6 @@ public class BackOfficePage extends Base {
 	public String getBackOfficePageUrl() {
 		return getDriver().getCurrentUrl();
 	}
+	
+	
 }

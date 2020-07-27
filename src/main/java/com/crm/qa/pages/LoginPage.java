@@ -75,5 +75,15 @@ public class LoginPage extends Base {
 
 		return getDriver().getCurrentUrl();
 	}
+	
+	/*
+	 * login to Backoffice
+	 */
+	
+	public BackOfficePage loginToBacOffice(String userEmail, String password) {
+		
+		
+		return new BackOfficePage();
+	}
 
 }

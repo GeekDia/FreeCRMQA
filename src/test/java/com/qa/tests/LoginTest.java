@@ -5,6 +5,8 @@ import java.lang.reflect.Method;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -71,15 +73,28 @@ public class LoginTest extends Base {
 		String email = loginUsers.getJSONObject("freeCrmValidCredentials").getString("useremail");
 		String password = loginUsers.getJSONObject("freeCrmValidCredentials").getString("userpassword");
 
-		loginPage.enterEmail(email, "Entering email : " + " "  + email);
-		loginPage.enterPassword(password, "Sending password :"  + " " + password);
+		loginPage.enterEmail(email, "Entering email : " + " " + email);
+		loginPage.enterPassword(password, "Sending password :" + " " + password);
 		backOfficePage = loginPage.pressLoginButton("Login Button pressed");
 
 		String actualbackOfficeURL = backOfficePage.getBackOfficePageUrl();
 
-		soft.assertEquals(actualbackOfficeURL, expectedLoginURL );
+		soft.assertEquals(actualbackOfficeURL, expectedLoginURL);
 
 		soft.assertAll();
+
+	}
+
+	@AfterTest
+	public void tearDown() throws Exception {
+		try {
+			getDriver().close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		} finally {
+			getDriver().quit();
+		}
 
 	}
 
