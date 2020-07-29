@@ -29,7 +29,6 @@ public class Base {
 	  public static final String ACCESS_KEY = "8a41c01f-c384-450c-95d5-f82863e2d509";
 	  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
 	  
-	  //https://bdia:8a41c01f-c384-450c-95d5-f82863e2d509@ondemand.eu-central-1.saucelabs.com:443/wd/hub
 	  
 
 	/*
@@ -40,8 +39,8 @@ public class Base {
 		PageFactory.initElements(driver, this);
 	}
 
-	@BeforeTest
-	public void invokeWebriver() throws Exception {
+	
+	public void invokeWebDriver() throws Exception {
 
 		InputStream file = null;
 		String propertyFileName = "config.properties";
@@ -61,25 +60,14 @@ public class Base {
 			
 
 			if (browserName.equalsIgnoreCase("chrome")) {
-				/*
-				String path = System.getProperty("user.dir") + "/src/main//resources/chromedriver";
-				System.out.println(path);
+				// Uncomment this line to run test case on local
+				
+				String path = System.getProperty("user.dir") + "/src/main/resources/chromedriver";
 				System.setProperty("webdriver.chrome.driver", path);
 				driver = new ChromeDriver();
-				 */
-				/*MutableCapabilities sauceOptions = new MutableCapabilities();
-
-				ChromeOptions browserOptions = new ChromeOptions();
-				browserOptions.setExperimentalOption("w3c", true);
-				browserOptions.setCapability("platformName", "Windows 10");
-				browserOptions.setCapability("browserVersion", "71.0");
-				browserOptions.setCapability("sauce:options", sauceOptions);
-				*/
-				/*DesiredCapabilities caps = DesiredCapabilities.chrome();
-			    caps.setCapability("platform", "Windows XP");
-			    caps.setCapability("version", "81");
-			    */
-			    MutableCapabilities sauceOptions = new MutableCapabilities();
+				
+				// Uncomment this lines to Run TEST ON SOUCE LABS CLOUD
+			    /*MutableCapabilities sauceOptions = new MutableCapabilities();
 
 			    ChromeOptions browserOptions = new ChromeOptions();
 			    browserOptions.setExperimentalOption("w3c", true);
@@ -88,8 +76,8 @@ public class Base {
 			    browserOptions.setCapability("sauce:options", sauceOptions);
 				
 				driver = new RemoteWebDriver(new java.net.URL(URL), browserOptions);
-				
-			} /*else if (browserName.equalsIgnoreCase("firefox")) {
+				*/
+			} else if (browserName.equalsIgnoreCase("firefox")) {
 
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "/src/main/resources/geckodriver");
@@ -100,7 +88,7 @@ public class Base {
 						System.getProperty("user.dir") + "/src/main/resources/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 
-			}*/
+			}
 
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -142,6 +130,13 @@ public class Base {
 
 	}
 
+	public String getText(WebElement e, String msg) {
+
+		System.out.println(msg);
+		return e.getText();
+
+	}
+	
 	/*
 	 *  Getter driver Method
 	 */

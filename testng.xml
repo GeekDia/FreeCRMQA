@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="false">
 
-
+	<listeners>
+	<listener class-name="com.crm.qa.listener.Listener"></listener>
+	</listeners>
 		
 	<!-- Add device parameters for all test cases  -->
 	
@@ -10,6 +12,7 @@
 	
 	<test name = "regression">
 		<classes>
+			<class name="com.qa.tests.BackOfficeTest" />
 			<class name="com.qa.tests.LoginTest" />
 		</classes>
 	</test>

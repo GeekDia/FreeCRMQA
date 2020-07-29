@@ -64,25 +64,30 @@ public class LoginPage extends Base {
 
 		return new BackOfficePage();
 	}
-	
+
 	/*
 	 * Click on login Button
 	 */
 
 	public String getURLOnLoginPage() {
-		
+
 		getDriver().getCurrentUrl();
 
 		return getDriver().getCurrentUrl();
 	}
-	
+
 	/*
-	 * login to Backoffice
+	 * login to BackOffice
 	 */
-	
+
 	public BackOfficePage loginToBacOffice(String userEmail, String password) {
+
+		sendKeys(email, userEmail, "Entering UserEmail : " + userEmail);
+
+		sendKeys(this.password, password, "Entering Password : " + password);
 		
-		
+		click(loginButton, "Clicking on submit button");
+
 		return new BackOfficePage();
 	}
 

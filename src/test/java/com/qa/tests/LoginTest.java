@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
-
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -47,6 +47,8 @@ public class LoginTest extends Base {
 				stream.close();
 
 		}
+		
+		invokeWebDriver();
 	}
 
 	@BeforeMethod
@@ -85,7 +87,7 @@ public class LoginTest extends Base {
 
 	}
 
-	@AfterTest
+	@AfterClass
 	public void tearDown() throws Exception {
 		try {
 			getDriver().close();

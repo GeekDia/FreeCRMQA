@@ -2,17 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.crm.qa.listener.Listener"/>
+  </listeners>
   <test thread-count="5" name="regression(failed)">
     <classes>
-      <class name="com.qa.tests.LoginTest">
+      <class name="com.qa.tests.BackOfficeTest">
         <methods>
-          <include name="successFullLogin"/>
-          <include name="tearDown"/>
-          <include name="invokeWebriver"/>
-          <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="verifyContactsLink"/>
+          <include name="AfterMethod"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.tests.LoginTest -->
+      </class> <!-- com.qa.tests.BackOfficeTest -->
     </classes>
   </test> <!-- regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->
