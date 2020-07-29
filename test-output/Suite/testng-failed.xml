@@ -7,15 +7,14 @@
   </listeners>
   <test thread-count="5" name="regression(failed)">
     <classes>
-      <class name="com.qa.tests.BackOfficeTest">
+      <class name="com.qa.tests.LoginTest">
         <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="verifyContactsLink"/>
-          <include name="AfterMethod"/>
+          <include name="successFullLogin"/>
           <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.qa.tests.BackOfficeTest -->
+      </class> <!-- com.qa.tests.LoginTest -->
     </classes>
   </test> <!-- regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->

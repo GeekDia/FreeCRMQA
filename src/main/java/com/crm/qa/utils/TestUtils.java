@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -54,4 +57,21 @@ public class TestUtils {
 		return data;
 
 	}
+
+	/*
+	 * 
+	 * This method get the datetime in this format : "dd-MM-yyyy-HH-mm-ss" It is
+	 * used for screenshot in failure testCase
+	 * 
+	 */
+
+	public String getDateTime() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+
+		Date date = new Date();
+
+		return dateFormat.format(date);
+
+	}
+
 }

@@ -14,7 +14,8 @@
 		<classes>
 			<class name="com.qa.tests.BackOfficeTest" />
 			<class name="com.qa.tests.LoginTest" />
-		</classes>
+<!-- 			<class name = "com.qa.tests.NewContactTest" />
+ -->		</classes>
 	</test>
 
 	
