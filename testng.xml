@@ -9,13 +9,14 @@
 	<!-- Add device parameters for all test cases  -->
 	
 	<parameter name="browser" value ="chrome"></parameter>
+	<parameter name="author" value ="Bamba Diao"></parameter>
 	
 	<test name = "regression">
 		<classes>
 			<class name="com.qa.tests.BackOfficeTest" />
 			<class name="com.qa.tests.LoginTest" />
-<!-- 			<class name = "com.qa.tests.NewContactTest" />
- -->		</classes>
+			<class name = "com.qa.tests.NewContactTest" />
+		</classes>
 	</test>
 
 	
