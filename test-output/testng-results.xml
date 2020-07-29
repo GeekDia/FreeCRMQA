@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-29T13:13:44 CEST" name="Suite" finished-at="2020-07-29T13:14:31 CEST" duration-ms="47087">
+  <suite started-at="2020-07-29T15:34:06 CEST" name="Suite" finished-at="2020-07-29T15:34:52 CEST" duration-ms="45589">
     <groups>
     </groups>
-    <test started-at="2020-07-29T13:13:44 CEST" name="regression" finished-at="2020-07-29T13:14:31 CEST" duration-ms="47087">
+    <test started-at="2020-07-29T15:34:06 CEST" name="regression" finished-at="2020-07-29T15:34:52 CEST" duration-ms="45589">
       <class name="com.qa.tests.BackOfficeTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:13:44 CEST" name="beforeClass" finished-at="2020-07-29T13:14:00 CEST" duration-ms="16826" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:06 CEST" name="beforeClass" finished-at="2020-07-29T15:34:23 CEST" duration-ms="16517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:00 CEST" name="beforeMethod" finished-at="2020-07-29T13:14:03 CEST" duration-ms="2504" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:23 CEST" name="beforeMethod" finished-at="2020-07-29T15:34:25 CEST" duration-ms="2538" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyBackofficeTitle()[pri:1, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:03 CEST" name="verifyBackofficeTitle" finished-at="2020-07-29T13:14:03 CEST" duration-ms="21" status="PASS">
+        <test-method signature="verifyBackofficeTitle()[pri:1, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:25 CEST" name="verifyBackofficeTitle" finished-at="2020-07-29T15:34:25 CEST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBackofficeTitle -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:03 CEST" name="AfterMethod" finished-at="2020-07-29T13:14:05 CEST" duration-ms="2122" status="PASS">
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:25 CEST" name="AfterMethod" finished-at="2020-07-29T15:34:27 CEST" duration-ms="1832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:05 CEST" name="beforeMethod" finished-at="2020-07-29T13:14:08 CEST" duration-ms="2509" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:27 CEST" name="beforeMethod" finished-at="2020-07-29T15:34:30 CEST" duration-ms="2446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserName()[pri:2, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:08 CEST" name="verifyUserName" finished-at="2020-07-29T13:14:08 CEST" duration-ms="667" status="PASS">
+        <test-method signature="verifyUserName()[pri:2, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:30 CEST" name="verifyUserName" finished-at="2020-07-29T15:34:30 CEST" duration-ms="664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserName -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:08 CEST" name="AfterMethod" finished-at="2020-07-29T13:14:09 CEST" duration-ms="502" status="PASS">
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:30 CEST" name="AfterMethod" finished-at="2020-07-29T15:34:31 CEST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:09 CEST" name="beforeMethod" finished-at="2020-07-29T13:14:11 CEST" duration-ms="2427" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:31 CEST" name="beforeMethod" finished-at="2020-07-29T15:34:33 CEST" duration-ms="2432" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,25 +60,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyContactsLink()[pri:3, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:11 CEST" name="verifyContactsLink" finished-at="2020-07-29T13:14:14 CEST" duration-ms="3102" status="PASS">
+        <test-method signature="verifyContactsLink()[pri:3, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:33 CEST" name="verifyContactsLink" finished-at="2020-07-29T15:34:36 CEST" duration-ms="2859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsLink -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:14 CEST" name="AfterMethod" finished-at="2020-07-29T13:14:15 CEST" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:36 CEST" name="AfterMethod" finished-at="2020-07-29T15:34:36 CEST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.BackOfficeTest@16e7dcfd]" started-at="2020-07-29T13:14:15 CEST" name="tearDown" finished-at="2020-07-29T13:14:15 CEST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.BackOfficeTest@29176cc1]" started-at="2020-07-29T15:34:36 CEST" name="tearDown" finished-at="2020-07-29T15:34:37 CEST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.BackOfficeTest -->
       <class name="com.qa.tests.LoginTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTest@3d121db3]" started-at="2020-07-29T13:14:15 CEST" name="beforeClass" finished-at="2020-07-29T13:14:19 CEST" duration-ms="4404" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTest@2f177a4b]" started-at="2020-07-29T15:34:37 CEST" name="beforeClass" finished-at="2020-07-29T15:34:40 CEST" duration-ms="3574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTest@3d121db3]" started-at="2020-07-29T13:14:19 CEST" name="beforeMethod" finished-at="2020-07-29T13:14:29 CEST" duration-ms="9915" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTest@2f177a4b]" started-at="2020-07-29T15:34:40 CEST" name="beforeMethod" finished-at="2020-07-29T15:34:50 CEST" duration-ms="10004" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,15 +89,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="successFullLogin()[pri:0, instance:com.qa.tests.LoginTest@3d121db3]" started-at="2020-07-29T13:14:29 CEST" name="successFullLogin" finished-at="2020-07-29T13:14:30 CEST" duration-ms="827" status="FAIL">
+        <test-method signature="successFullLogin()[pri:0, instance:com.qa.tests.LoginTest@2f177a4b]" started-at="2020-07-29T15:34:50 CEST" name="successFullLogin" finished-at="2020-07-29T15:34:51 CEST" duration-ms="905" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-expected [tetststystyt] but found [https://ui.freecrm.com/]]]>
+expected [bbbn,bn,bn] but found [https://ui.freecrm.com/]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [tetststystyt] but found [https://ui.freecrm.com/]
+expected [bbbn,bn,bn] but found [https://ui.freecrm.com/]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
 at com.qa.tests.LoginTest.successFullLogin(LoginTest.java:86)
@@ -135,7 +135,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successFullLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@3d121db3]" started-at="2020-07-29T13:14:30 CEST" name="tearDown" finished-at="2020-07-29T13:14:31 CEST" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@2f177a4b]" started-at="2020-07-29T15:34:51 CEST" name="tearDown" finished-at="2020-07-29T15:34:52 CEST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

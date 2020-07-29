@@ -81,7 +81,7 @@ public class LoginTest extends Base {
 
 		String actualbackOfficeURL = backOfficePage.getBackOfficePageUrl();
 
-		soft.assertEquals(actualbackOfficeURL, expectedLoginURL);
+		soft.assertEquals(actualbackOfficeURL, "bbbn,bn,bn");
 
 		soft.assertAll();
 

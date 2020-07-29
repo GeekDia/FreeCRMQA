@@ -14,22 +14,28 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.Status;
+import com.crm.qa.reports.ExtentReport;
 import com.crm.qa.utils.TestUtils;
+import com.crm.qa.utils.WebEventListener;
 
 public class Base {
 
 	public static WebDriver driver;
+	public static EventFiringWebDriver e_driver;
+
+	WebEventListener eventListener;
 	static Properties prop;
 	TestUtils utils = new TestUtils();
-	
+
 	public static final String USERNAME = "bdia";
-	  public static final String ACCESS_KEY = "8a41c01f-c384-450c-95d5-f82863e2d509";
-	  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
-	  
-	  
+	public static final String ACCESS_KEY = "8a41c01f-c384-450c-95d5-f82863e2d509";
+	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY
+			+ "@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
 
 	/*
 	 * Initialze object Page Factory
@@ -39,7 +45,6 @@ public class Base {
 		PageFactory.initElements(driver, this);
 	}
 
-	
 	public void invokeWebDriver() throws Exception {
 
 		InputStream file = null;
@@ -57,26 +62,26 @@ public class Base {
 			// mvn test -Dbrowser=chrome
 
 			// String browserName = System.getProperty("browser");
-			
 
 			if (browserName.equalsIgnoreCase("chrome")) {
 				// Uncomment this line to run test case on local
-				
+
 				String path = System.getProperty("user.dir") + "/src/main/resources/chromedriver";
 				System.setProperty("webdriver.chrome.driver", path);
 				driver = new ChromeDriver();
-				
-				// Uncomment this lines to Run TEST ON SOUCE LABS CLOUD
-			    /*MutableCapabilities sauceOptions = new MutableCapabilities();
 
-			    ChromeOptions browserOptions = new ChromeOptions();
-			    browserOptions.setExperimentalOption("w3c", true);
-			    browserOptions.setCapability("platformName", "macOS 10.15");
-			    browserOptions.setCapability("browserVersion", "72.0");
-			    browserOptions.setCapability("sauce:options", sauceOptions);
-				
-				driver = new RemoteWebDriver(new java.net.URL(URL), browserOptions);
-				*/
+				// Uncomment this lines to Run TEST ON SOUCE LABS CLOUD
+				/*
+				 * MutableCapabilities sauceOptions = new MutableCapabilities();
+				 * 
+				 * ChromeOptions browserOptions = new ChromeOptions();
+				 * browserOptions.setExperimentalOption("w3c", true);
+				 * browserOptions.setCapability("platformName", "macOS 10.15");
+				 * browserOptions.setCapability("browserVersion", "72.0");
+				 * browserOptions.setCapability("sauce:options", sauceOptions);
+				 * 
+				 * driver = new RemoteWebDriver(new java.net.URL(URL), browserOptions);
+				 */
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 
 				System.setProperty("webdriver.gecko.driver",
@@ -89,6 +94,15 @@ public class Base {
 				driver = new InternetExplorerDriver();
 
 			}
+
+			/*
+			 * Printing on console all webdriver event
+			 * 
+			 * e_driver = new EventFiringWebDriver(driver); eventListener = new
+			 * WebEventListener(); e_driver.register(eventListener);
+			 * 
+			 * driver = e_driver;
+			 */
 
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -136,22 +150,14 @@ public class Base {
 		return e.getText();
 
 	}
-	
+
 	/*
-	 *  Getter driver Method
+	 * Getter driver Method
 	 */
-	
+
 	public WebDriver getDriver() {
-		
+
 		return driver;
 	}
-	
-	
-	
-	
-	
-	
-	
-
 
 }
