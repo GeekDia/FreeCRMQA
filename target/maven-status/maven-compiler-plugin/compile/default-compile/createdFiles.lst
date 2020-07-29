@@ -1,0 +1,13 @@
+com/crm/qa/listener/Listener.class
+com/crm/qa/pages/TaskPage.class
+com/crm/qa/pages/LoginPage.class
+com/crm/qa/reports/ExtentReport.class
+com/crm/qa/pages/HomePage.class
+com/crm/qa/utils/WebEventListener.class
+com/crm/qa/utils/TestUtils.class
+com/crm/qa/pages/DealsPage.class
+com/crm/qa/pages/BackOfficePage.class
+com/crm/qa/base/MenuPage.class
+com/crm/qa/pages/ContactsPage.class
+com/crm/qa/base/Base.class
+com/crm/qa/pages/NewContact.class

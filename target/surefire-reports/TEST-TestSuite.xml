@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="7" failures="0" name="TestSuite" time="51.958" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="FreeCRMTestJob"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="/Users/bambadia/.jenkins"/>
+    <property name="PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin"/>
+    <property name="HUDSON_SERVER_COOKIE" value="3640caf238963736"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="bambadia"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="user.language" value="fr"/>
+    <property name="JOB_BASE_NAME" value="FreeCRMTestJob"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:9090/job/FreeCRMTestJob/1/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#1"/>
+    <property name="TMPDIR" value="/var/folders/wz/ypl56sj97p32h42rtwwzcpmc0000gp/T/"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="XPC_FLAGS" value="0x0"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="1"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/zsh"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3/conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="FR"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.15.5"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:9090/job/FreeCRMTestJob/1/display/redirect"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:9090/job/FreeCRMTestJob/display/redirect"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="LOGNAME" value="bambadia"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="HOME" value="/Users/bambadia"/>
+    <property name="user.home" value="/Users/bambadia"/>
+    <property name="BUILD_TAG" value="jenkins-FreeCRMTestJob-1"/>
+    <property name="JENKINS_SERVER_COOKIE" value="3640caf238963736"/>
+    <property name="HUDSON_URL" value="http://localhost:9090/"/>
+    <property name="XPC_SERVICE_NAME" value="homebrew.mxcl.jenkins"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.library.path" value="/Users/bambadia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.home" value="/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3 /Users/bambadia/.jenkins/war/WEB-INF/lib/remoting-4.5.jar /Users/bambadia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar /Users/bambadia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 53721"/>
+    <property name="java.class.path" value="/Users/bambadia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.13.jar:/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar:/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3/conf/logging"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PATH+JDK" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3"/>
+    <property name="java.io.tmpdir" value="/var/folders/wz/ypl56sj97p32h42rtwwzcpmc0000gp/T/"/>
+    <property name="HUDSON_HOME" value="/Users/bambadia/.jenkins"/>
+    <property name="PATH+MAVEN" value="/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3/bin"/>
+    <property name="BUILD_URL" value="http://localhost:9090/job/FreeCRMTestJob/1/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.YVRDZjJkUC/Listeners"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.ext.dirs" value="/Users/bambadia/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="__CF_USER_TEXT_ENCODING" value="0x1F6:0x0:0x1"/>
+    <property name="user.dir" value="/Users/bambadia/eclipse-workspace/FreeCRMTest"/>
+    <property name="JOB_URL" value="http://localhost:9090/job/FreeCRMTestJob/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="MAVEN_HOME" value="/Users/bambadia/Desktop/Tests-ISTQB/apache-maven-3.6.3"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="1"/>
+    <property name="JENKINS_URL" value="http://localhost:9090/"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="maven3.interceptor" value="/Users/bambadia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.13.jar"/>
+    <property name="WORKSPACE_TMP" value="/Users/bambadia/.jenkins/workspace/FreeCRMTestJob@tmp"/>
+    <property name="WORKSPACE" value="/Users/bambadia/.jenkins/workspace/FreeCRMTestJob"/>
+    <property name="maven3.interceptor.common" value="/Users/bambadia/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="JAVA_MAIN_CLASS_5382" value="Main"/>
+    <property name="USER" value="bambadia"/>
+  </properties>
+  <testcase classname="com.qa.tests.NewContactTest" name="validateCreateNewContact" time="16.417"/>
+  <testcase classname="com.qa.tests.NewContactTest" name="validateCreateNewContact" time="15.239"/>
+  <testcase classname="com.qa.tests.NewContactTest" name="validateCreateNewContact" time="15.733"/>
+  <testcase classname="com.qa.tests.BackOfficeTest" name="verifyBackofficeTitle" time="0.011"/>
+  <testcase classname="com.qa.tests.BackOfficeTest" name="verifyUserName" time="0.638"/>
+  <testcase classname="com.qa.tests.BackOfficeTest" name="verifyContactsLink" time="3.143"/>
+  <testcase classname="com.qa.tests.LoginTest" name="successFullLogin" time="0.777"/>
+</testsuite>

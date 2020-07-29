@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="127135" started-at="2020-07-29T18:07:59 CEST" finished-at="2020-07-29T18:10:06 CEST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="127135" started-at="2020-07-29T18:07:59 CEST" finished-at="2020-07-29T18:10:06 CEST">
+      <class name="com.qa.tests.BackOfficeTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="beforeClass" is-config="true" duration-ms="18267" started-at="2020-07-29T18:09:16 CEST" finished-at="2020-07-29T18:09:35 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="beforeMethod" is-config="true" duration-ms="2633" started-at="2020-07-29T18:09:35 CEST" finished-at="2020-07-29T18:09:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.BackOfficeTest.verifyBackofficeTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyBackofficeTitle()[pri:1, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="verifyBackofficeTitle" duration-ms="11" started-at="2020-07-29T18:09:37 CEST" finished-at="2020-07-29T18:09:37 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBackofficeTitle -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="AfterMethod" is-config="true" duration-ms="2197" started-at="2020-07-29T18:09:37 CEST" finished-at="2020-07-29T18:09:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="beforeMethod" is-config="true" duration-ms="3348" started-at="2020-07-29T18:09:39 CEST" finished-at="2020-07-29T18:09:43 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.BackOfficeTest.verifyUserName()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyUserName()[pri:2, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="verifyUserName" duration-ms="642" started-at="2020-07-29T18:09:43 CEST" finished-at="2020-07-29T18:09:43 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserName -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="AfterMethod" is-config="true" duration-ms="948" started-at="2020-07-29T18:09:43 CEST" finished-at="2020-07-29T18:09:44 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="beforeMethod" is-config="true" duration-ms="2541" started-at="2020-07-29T18:09:44 CEST" finished-at="2020-07-29T18:09:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.BackOfficeTest.verifyContactsLink() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyContactsLink()[pri:3, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="verifyContactsLink" duration-ms="3144" started-at="2020-07-29T18:09:47 CEST" finished-at="2020-07-29T18:09:50 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsLink -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="AfterMethod" is-config="true" duration-ms="259" started-at="2020-07-29T18:09:50 CEST" finished-at="2020-07-29T18:09:50 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.BackOfficeTest@1f28c152]" name="tearDown" is-config="true" duration-ms="328" started-at="2020-07-29T18:09:50 CEST" finished-at="2020-07-29T18:09:51 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.BackOfficeTest -->
+      <class name="com.qa.tests.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTest@7d907bac]" name="beforeClass" is-config="true" duration-ms="4203" started-at="2020-07-29T18:09:51 CEST" finished-at="2020-07-29T18:09:55 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTest@7d907bac]" name="beforeMethod" is-config="true" duration-ms="10197" started-at="2020-07-29T18:09:55 CEST" finished-at="2020-07-29T18:10:05 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.LoginTest.successFullLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="successFullLogin()[pri:0, instance:com.qa.tests.LoginTest@7d907bac]" name="successFullLogin" duration-ms="777" started-at="2020-07-29T18:10:05 CEST" finished-at="2020-07-29T18:10:06 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successFullLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@7d907bac]" name="tearDown" is-config="true" duration-ms="286" started-at="2020-07-29T18:10:06 CEST" finished-at="2020-07-29T18:10:06 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.LoginTest -->
+      <class name="com.qa.tests.NewContactTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="beforeClass" is-config="true" duration-ms="19488" started-at="2020-07-29T18:07:59 CEST" finished-at="2020-07-29T18:08:18 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="beforeMethod" is-config="true" duration-ms="2658" started-at="2020-07-29T18:08:20 CEST" finished-at="2020-07-29T18:08:22 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.NewContactTest.validateCreateNewContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="validateCreateNewContact" duration-ms="16411" started-at="2020-07-29T18:08:22 CEST" data-provider="getContactsData" finished-at="2020-07-29T18:08:39 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joe ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dia]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VATO]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[joee@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="AfterMethod" is-config="true" duration-ms="186" started-at="2020-07-29T18:08:39 CEST" finished-at="2020-07-29T18:08:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="beforeMethod" is-config="true" duration-ms="3010" started-at="2020-07-29T18:08:39 CEST" finished-at="2020-07-29T18:08:42 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.NewContactTest.validateCreateNewContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="validateCreateNewContact" duration-ms="15238" started-at="2020-07-29T18:08:42 CEST" data-provider="getContactsData" finished-at="2020-07-29T18:08:57 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dio]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VATI]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[adile@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="AfterMethod" is-config="true" duration-ms="266" started-at="2020-07-29T18:08:57 CEST" finished-at="2020-07-29T18:08:57 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="beforeMethod" is-config="true" duration-ms="2542" started-at="2020-07-29T18:08:57 CEST" finished-at="2020-07-29T18:09:00 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.NewContactTest.validateCreateNewContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="validateCreateNewContact" duration-ms="15733" started-at="2020-07-29T18:09:00 CEST" data-provider="getContactsData" finished-at="2020-07-29T18:09:16 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nabi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dpo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VITA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[nabil@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="AfterMethod" is-config="true" duration-ms="243" started-at="2020-07-29T18:09:16 CEST" finished-at="2020-07-29T18:09:16 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.NewContactTest@369f73a2]" name="tearDown" is-config="true" duration-ms="410" started-at="2020-07-29T18:09:16 CEST" finished-at="2020-07-29T18:09:16 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.NewContactTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
